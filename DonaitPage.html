@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--This is a declration doc-->
+<html>
+<head>
+    <title>Blood system home</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <img src="image/bloodLogo.png" alt="logo" class="logo" />
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="DonatePage.html">Donate</a></li>
+            <li><a href="#">Concate</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#" class="sepical">Log in</a></li>
+
+        </ul>
+    </nav>
+    <div class="donat-box">
+        <from class="Donait-form" method="post">
+            <div class="donait-from-logo-container">
+                <p class="donait-from-logo">Your drops of blood can create an ocean of happiness...</p>
+            </div>
+            <div class="donait-from-content">
+                <div class="donait-from-header">To Donait</div>
+                <input class="donait-from-input" type="text" name="UserName" placeholder="Full Name" /> <br />
+                <input class="donait-from-input" type="text" name="UserEmail" placeholder="Email" /> <br />
+                <input class="donait-from-input" type="text" name="UserNationalID" placeholder="National ID" /> <br />
+                <input class="donait-from-input" type="text" name="UserPhone" placeholder="Phone Number" /> <br />
+                <input class="donait-from-input"type="radio" name="Usergender" value="Male" />
+                <label>Male</label>
+                <input type="radio" name="Usergender" value="Female" />
+                <label>Female</label><br />
+                <label>Blood Type</label>
+                <select id="blood-type">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O" selected>O</option>
+                </select>
+
+
+            </div>
+        </from>
+    </div>
+    <footer class="footer">
+        <div class="footer-heading footer-3">
+            <h2>Contact Us </h2>
+            <ul>
+                <li><a herf="mailto:gbahmeed@stu.kau.edu.sa" class="fa fa-">Email</a></li>
+                <li><a herf="#" class="fa fa-facebook">acebook</a></li>
+                <li><a herf="#" class="fa fa-twitter"> twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-email-form">
+            <h2>To communicate with you</h2>
+            <input type="email" placeholder="Enter you email address" id="footer-email" />
+            <input type="submit" value="Sumbit" id="footer-email-btn" />
+        </div>
+    </footer>
+</body>
+</html>
+
+
