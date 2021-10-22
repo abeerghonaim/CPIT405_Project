@@ -1,0 +1,307 @@
+
+/*---------------------------header------------------------------*/
+#top-header{ 
+    text-align: center;
+    height: 100px;
+}
+.logo {
+        width: 50px;
+        height: 50px;
+        margin-top:20px;
+		margin-left:40px;
+        position: relative;
+		float:left;
+}
+#menu{
+   /* float: left;
+    width: 70%;
+    height: 100%;
+    margin: none;*/
+	
+	height: 85px;
+    background: #7A1324;
+    box-shadow: 0 0 5px #19414c,0 0 5px #b5a270;
+}
+     
+#menu ul{
+    /*text-align: center;
+    float: right;
+    margin: none;
+    background: pink;*/
+	float:left;
+    margin-left: 20%;
+}
+     
+#menu li{
+    /*display: inline-block;
+    padding: none;
+    margin: none;*/
+	 display: inline-block;
+     line-height: 60px;
+     margin: 0 25px;
+     text-decoration:none;
+}
+     
+/*#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}*/
+     
+#menu li a{
+         
+   /* color: #FFF; */
+   
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+	text-decoration: none;
+
+}
+     
+/*#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: red;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}*/
+
+#menu li a:before {
+    position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s linear;
+}
+
+#menu li:hover a:before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+/*---------------------------body------------------------------*/				
+
+body {
+    font-family: 'fsalbertarabic';
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(20% 0,#bdbbbb 2%,#f7f7f7 100%);
+}
+
+div h1 {
+    margin-top: 15%;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#b99534;
+}
+
+div p {
+    padding-left: 70px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   /* background-image: url(../image/backDonate.png);
+    background-repeat: no-repeat;
+    background-size: 30%;*/
+}
+
+img {
+    float: right;
+    margin-right: 5%;
+    width: 40%;
+    height: 40%;
+   /* border-radius: 30px;
+    box-shadow: 0 0 5px #19414c,0 0 5px #b5a270;*/
+}
+
+img:hover {
+   // margin-top:20px;
+    //box-shadow: 0 0 15px #477480,0 0 15px #b5a270;*/
+}
+
+/*---------------------------About us------------------------------*/
+#vision {
+    margin-left: 30px;
+    font-size: 50px;
+    color:#7A1324;
+	font-family:'fsalbertarabic';
+	
+}
+
+#vision .title{
+    margin-left: 50px;
+    font-size: 30px;
+    color:#7A1324;
+	
+}
+
+#vision .img{
+	float: left;
+    margin-right: 15%;
+    width: 10%;
+    height: 10%;
+	
+}
+
+
+#back-photo{
+    float:left;
+    margin-top:-8%;
+}
+#heading{
+   margin-top:20%;
+   font-size:25px;
+   margin-left:90px;
+   color:#6e1e1e;
+   font-family:'Brush Script MT';
+   font-weight:bold;
+}
+
+.donat-box {
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.Donait-form * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Donait-form {
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #000000;
+   
+}
+.donait-from-logo-container {
+    padding: 30px;
+    background: #b5a270;
+    width: 900px;
+    height: 90px;
+    margin-left: 20%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #19414c;
+}
+.donait-from-logo {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
+.donait-from-content {
+    padding: 30px;
+    width: 900px;
+    margin-left: 20%;
+    background: #e8e2e2;
+}
+
+.donait-from-header {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #384143;
+}
+
+.donait-from-input {
+   justify-items:center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #bdbbbb;
+}
+
+/*---------------------------footer------------------------------*/
+
+#footer #col1,
+#footer #col2,
+{
+    float: left;
+    width: 2500px;
+    padding: 0px 40px 0px 40px;
+  
+}
+     
+#footer #icon{
+   
+    margin-bottom: 1em;
+    font-size: 3em;
+	display: inline-block;
+  
+}
+ 
+.company-details{
+    overflow: hidden;
+    padding: 1em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+	display: inline-block;
+}
+
+
+.copyright
+{
+    overflow: hidden;
+    padding: 0em 0em;
+    text-align: center;
+    background: #A61A31;
+}
+     
+.copyright p
+{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: white;
+	position:center;
+	padding: 1em 1em 1em 1em;
+  
+}
+    
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+}
+ 
+
+ul.contact{
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+  
+}
+     
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ 
+ul.contact li a{
+    color: #FFF;
+    display: inline-block;
+    background: #F26665;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
