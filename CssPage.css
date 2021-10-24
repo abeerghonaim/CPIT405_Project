@@ -1,0 +1,535 @@
+
+/*---------------------------header------------------------------*/
+#top-header{ 
+    text-align: center;
+    height: 100px;
+}
+
+.logo {
+        width: 70px;
+        height: 70px;
+        margin-top:10px;
+		margin-left:40px;
+        position: relative;
+		float:left;
+}
+#menu{
+	height: 95%;
+    background: #7A1324;
+    box-shadow: 0 0 5px #19414c,0 0 5px #b5a270;
+}
+     
+#menu ul{
+	float:left;
+    margin-left: 10%; 
+}
+     
+#menu li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 25px;
+    text-decoration:none;
+}
+   
+#menu li a{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+#menu li a:before {
+    position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 100%;
+	background: white;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .4s linear;
+}
+
+#menu li:hover a:before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+
+/*---------------------------body------------------------------*/				
+
+body {
+    font-family: 'fsalbertarabic';
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(20% 0,#bdbbbb 2%,#f7f7f7 100%);
+}
+
+/*---------------------------Home------------------------------*/
+
+#back-photo{
+    float:left;
+    margin-top:-8%;
+}
+#heading{
+   margin-top:20%;
+   font-size:25px;
+   margin-left:90px;
+   color:#6e1e1e;
+   font-family:'Brush Script MT';
+   font-weight:bold;
+}
+
+.Home h1 {
+    margin-top: 15%;
+    margin-left: 50px;
+    font-size: 30px;
+    color:#b99534;
+}
+
+
+.Home p {
+    padding-left: 70px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   /* background-image: url(../image/backDonate.png);
+    background-repeat: no-repeat;
+    background-size: 30%;*/
+}
+
+.Home .img1 {
+	margin-top:-10%;
+    float: right;
+    margin-right: 5%;
+    width: 40%;
+    height: 40%;
+   /* border-radius: 30px;
+    box-shadow: 0 0 5px #19414c,0 0 5px #b5a270;*/
+}
+
+.Home .img1 :hover {
+   // margin-top:20px;
+    //box-shadow: 0 0 15px #477480,0 0 15px #b5a270;*/
+}
+
+/*---------------------------About us------------------------------*/
+.bigtitle{
+    font-size: 40px;
+	text-align: center;
+    color:#b99534;
+	font-family:'fsalbertarabic';
+}
+
+.subtitle{
+	margin-left:20%;
+	margin-right:20%;
+    font-size: 25px;
+	text-align: center;
+    color:#7A1324;
+	font-family:'fsalbertarabic';
+}
+
+#vision {
+    margin-left: 30px;
+    font-size: 20px;
+    color:#7A1324;
+	font-family:'fsalbertarabic';
+}
+
+
+#vision .subtd{
+	text-align: left;
+	padding-left:15%;
+    font-size: 20px;
+    color:#F26665;
+}
+
+#vision .samerow{
+	float: left;
+    margin-right: 2%;
+	margin-left: 10%;
+    font-size: 25px;
+	
+}
+
+#vision .img1{
+	float: left;
+   margin-right: 2%;
+   margin-top: -5%;
+   width:60px;
+   height:60px;
+}
+
+#vision .img2{
+	/*float: right;
+    margin-right: 15%;
+    width: 50%;
+    height: 50%;*/
+	
+	float: right;
+    margin-right: 30%;
+    width: 60%;
+    height: 60%;
+	
+}
+
+/**-------------------------------------forms contact us ------------------------**/
+ .input1, .textarea1 { 
+      outline: none;
+}
+  
+.form1 {
+	position: relative;
+	width: 60%;
+	border-radius: 30px;
+	background: #b99534;
+	margin-bottom:5%;
+	margin-left:20%
+}
+  
+ .formheader {
+	
+    font-size: 35px;
+	color:#fff;
+	text-align:center;
+	font-family:'fsalbertarabic';
+}
+
+ 
+.form-left-decoration,
+.form-right-decoration {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	border-radius: 20px;
+	background: #A61A31;
+}
+
+.form-left-decoration {
+	bottom: 60px;
+	left: -30px;
+}
+	
+.form-right-decoration {
+	top: 60px;
+	right: -30px;
+}
+
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	border-radius: 30px;
+    background: #b99534;
+ }
+ 
+.form-left-decoration:before {
+	top: -20px;
+}
+
+.form-left-decoration:after {
+	top: 20px;
+	left: 10px;
+}
+
+.form-right-decoration:before {
+	top: -20px;
+	right: 0;
+}
+
+.form-right-decoration:after {
+	top: 20px;
+	right: 10px;
+}
+
+.circle {
+	position: absolute;
+	bottom: 80px;
+	left: -55px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #A61A31;
+}
+
+.form-inner {
+	padding: 40px;
+}
+
+.form-inner .input1,
+.form-inner .textarea1 {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #d0dfe8;
+}
+
+.form-inner .textarea1 {
+	resize: none;
+}
+
+.button1 {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid #7A1324;
+	background: #891528; 
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.button1:hover {
+	background: #B51C36;
+	} 
+ 
+@media (min-width: 568px) {
+    .form1 {
+	  margin-top: 5%;
+      width: 60%;
+    }
+}
+	  
+/**-------------------------------------forms To Donait ------------------------*/
+.donat-box {
+	margin:15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	margin-right:50px;
+	margin-left:-50px;
+	
+}
+
+.Donait-form * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+}
+
+.Donait-form {
+	//border-width:600px;
+    max-width:auto;
+    margin: 0 auto;
+    //border-radius: 10px;
+    overflow: hidden;
+    //box-shadow: 0 0 15px #000000;
+	
+   
+}
+.donait-from-logo-container {
+   padding: 30px;
+    background: #b99534;
+    width: 900px;
+    height: 90px;
+    margin-left: 20%;
+    border-radius: 5px;
+    //box-shadow: 0 0 10px #19414c;
+}
+.donait-from-logo {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
+.donait-from-content {
+    padding: 30px;
+    width: 900px;
+    margin-left: 20%;
+    background:#e8e2e2;
+	border-radius: 5px;
+}
+
+.donait-from-header {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #384143;
+}
+
+.donait-from-input {
+   justify-items:center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #bdbbbb;
+}
+
+/*-------------------------Previous Donations--------------------*/
+#Donationpre li{
+    margin-left: 30px;
+	margin-bottom: 30px;
+    font-size: 20px;
+    color:#7A1324;
+	font-family:'fsalbertarabic';
+	list-style-type:none
+}
+
+
+#Donationpre .img1{
+   float: left;
+   margin-right: 2%;
+   margin-top: -2%;
+   width:60px;
+   height:60px;
+}
+
+#Donationpre .img2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	width: 50%;
+}
+
+.Donations h1 {
+    margin-left: 50px;
+    font-size: 30px;
+    color:#b99534;
+	text-align:center;
+}
+
+.Donations h2 {
+    margin-left: 50px;
+	margin-bottom: 50px;
+    font-size: 30px;
+    color:#b99534;
+}
+
+
+.Donations p {
+    padding-left: 50px;
+    font-size: 35px;
+	text-align:center;
+	color:#7A1324;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slideshow {
+overflow: hidden;
+width: 563px;
+height: 376px;
+margin: 0 auto;
+}
+.slide-wrapper {
+width: 3000px;
+animation: slide 18s infinite;
+}
+.image-container{
+margin-top:30;
+float: left;
+width: 563px;
+height: 376px;
+
+}
+.image-container:nth-child(1) {
+background-image: url("blooddonation1.jpg") ;
+}
+.image-container:nth-child(2) {
+background-image: url("blooddonation2.jpg") ;
+}
+.image-container:nth-child(3) {
+background-image: url("blooddonation3.jpg") ;
+}
+.image-container:nth-child(4) {
+background-image: url("blooddonation4.jpg") ;
+}
+@keyframes slide {
+20% {margin-left: 0px;}
+30% {margin-left: -563px;}
+50% {margin-left: -563px;}
+60% {margin-left: -1125px;}
+70% {margin-left: -1125px;}
+80% {margin-left: -1700px;}
+90% {margin-left: -1700px;}
+}
+
+/*---------------------------footer------------------------------*/
+
+#footer #col1,
+#footer #col2,{
+    float: left;
+    width: 2500px;
+    padding: 0px 40px 0px 40px;
+}
+#footer #icon{
+    margin-bottom: 1em;
+    font-size: 3em;
+	display: inline-block;
+}
+ 
+.company-details{
+    overflow: hidden;
+    padding: 1em 0em;
+    background: #E3F0F7;
+    text-align: center;
+    margin-top: 5em;
+	display: inline-block;
+}
+
+.copyright{
+    overflow: hidden;
+    padding: 0em 0em;
+    text-align: center;
+    background: #A61A31;
+    border-top:double;
+	border-bottom:double;
+    border-color:#fff;
+	border-width:5px;
+}
+     
+.copyright p {
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: white;
+	position:center;
+	padding: 1em 1em 1em 1em;
+  
+}
+    
+.copyright a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+}
+ 
+
+ul.contact{
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+  
+}
+     
+ul.contact li{
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 1em;
+}
+ 
+ul.contact li a{
+    color: #FFF;
+    display: inline-block;
+    background: #F26665;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
